@@ -1,15 +1,16 @@
-#DemoDumper
+# DemoDumper
 
 Dumps Quake Live demo files to JSON format.
-Originally written by [Shawn Nock](https://github.com/nocko/qldemo-python) with original Huffman Python wrapper by [Petr Skramovsky](https://code.google.com/p/pyq3a/) Quake 3 demo specification is available at [http://www.elho.net/games/q3/q3dspecs.htm](www.elho.net/games/q3/q3dspecs.htm)
+Originally written by [Shawn Nock](https://github.com/nocko/qldemo-python) with original Huffman Python wrapper by [Petr Skramovsky](https://code.google.com/p/pyq3a/) Quake 3 demo specification is available at www.elho.net/games/q3/q3dspecs.htm
 
 I have added some modifications (such as directory dumping & file output) to support an application I am currently building.
 
- 	Note: you will need a C compiler to build the pyhuffman C extension.
+Note: you will need a C compiler to build the pyhuffman C extension.
 
     python setup.py build
 
-###Run:
+### Run:
+
 To dump a directory of demo files to JSON:
 
     python demodumper.py -d "path-to-demo-files"
@@ -22,7 +23,7 @@ To dump a text file containing paths to demos (one full path per line):
 
     python demodumper.py -l "path-to-text-file" -o "name-of-output-json-file.json"
 
-#Testers
+# Testers
 
 If you would like to help us fix bugs but you don't have any .dm_73 demo test data (demo files), [an archive of roughly 100 demos can be found here.](http://goo.gl/gnsTcx) If you need even more, there are plenty of demo files available at [the trance.gg website](http://trance.gg/Quake-demos/)
 
